@@ -12,7 +12,8 @@
 1. Clone or pull source code from github repository(git clone https://github.com/ub0005/HLS-Transfer-Workflows.git or git pull)
 2. cd into HLS-Transfer-Workflows/Data-Transfer-ReactJS-Dashboard.
 3. Update your json config file with your grafana panels iframe URL's.
-4. Execute command **npm install** to install all the dependencies.
+4. Execute below command to install all the dependencies.
+  ```npm install```
 5. Execute command **npm run build** to create the build out of source code.
 6. Execute command **npm install pm2 -g** to install pm2 globally
 7. Execute command **pm2 serve {path-to-build}/ {port}  --name "{name}"** to deploy the build(e.g : pm2 serve build/ 5000 --name "my-react-app").
