@@ -9,13 +9,13 @@ const Layout = () => {
           <Link to="/">Data Transfer Progress</Link>
         </li>
         <li>
-          <Link to="/healthofdata">Health of Data</Link>
+          <Link to="/health-of-data">Health of Data</Link>
         </li>
         <li>
-          <Link to="/technicaldetails">Technical Details</Link>
+          <Link to="/technical-details">Technical Details</Link>
         </li>
         <li>
-          <Link to="/transferqueue">Transfer Queue</Link>
+          <Link to="/transfer-queue">Transfer Queue</Link>
         </li>
       </ul>
       <Outlet />

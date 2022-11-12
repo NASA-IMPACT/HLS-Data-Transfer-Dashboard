@@ -12,15 +12,15 @@ function App() {
   return (
     <html>
       <div className="App">
-        <img className='logo' src={logo}></img>
+        <img className="logo" src={logo}></img>
       </div>
       <BrowserRouter>
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<DataTransferProgress />} />
-          <Route path="healthofdata" element={<HealthOfData />} />
-          <Route path="technicaldetails" element={<TechnicalDetails />} />
-          <Route path="transferqueue" element={<TransferQueue />} />
+          <Route path="health-of-data" element={<HealthOfData />} />
+          <Route path="technical-details" element={<TechnicalDetails />} />
+          <Route path="transfer-queue" element={<TransferQueue />} />
         </Route>
       </Routes>
     </BrowserRouter>
