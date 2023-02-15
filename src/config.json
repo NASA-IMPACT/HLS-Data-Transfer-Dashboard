@@ -17,5 +17,8 @@
     "TECHNICAL_DETAILS":{
         "UP_TIME": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&panelId=16",
         "LOAD": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&panelId=6"
+    },
+    "LOGIN": {
+        "LOGIN_URL": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/login"
     }
 }
