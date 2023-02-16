@@ -39,13 +39,6 @@ function Login() {
 
   return (
     <div className="login-container">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="user">Username</label>
         <input
