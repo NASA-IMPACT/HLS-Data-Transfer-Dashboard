@@ -10,15 +10,22 @@
     },
     "HEALTH_OF_DATA": {
         "TOTAL_THROUGHPUT": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=24",
-        "MEMORY": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&panelId=10",
+        "MEMORY": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=10",
         "AVG_THROUGHPUT": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=14",
         "INDIVIDUAL_THROUGHPUT": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=12"
     },
     "TECHNICAL_DETAILS":{
-        "UP_TIME": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&panelId=16",
-        "LOAD": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&panelId=6"
+        "UP_TIME": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=16",
+        "LOAD": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=6"
     },
     "LOGIN": {
         "LOGIN_URL": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/login"
+    },
+    "TRANSFER_QUEUE": {
+        "TOTAL_DATA_TRANSFERRED": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=32",
+        "TOTAL_DATA":"https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=34",
+        "TOTAL_REMAINING_DATA":"https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=33",
+        "TOTAL_ESTIMATED_COST": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&panelId=35",
+        "TRANSFER_QUEUE_TABLE": "https://esa-nasa-data-transfers.cybershuttle.org/grafana/d-solo/vUMFoZrnk/hls-data-transfer-metrics?orgId=1&refresh=5s&frameborder=1&panelId=37"
     }
 }

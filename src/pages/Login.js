@@ -27,7 +27,6 @@ function Login() {
         body: JSON.stringify({ user, password })
     });
     const data = await response.json();
-    console.log(data);
     if (data.message == "Logged in"){
       localStorage.setItem("authenticate", true)
       navigate("/dashboard");

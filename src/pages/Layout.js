@@ -9,7 +9,6 @@ const Layout = () => {
   
   useEffect(() => {
     const authenticate = localStorage.getItem("authenticate");
-    console.log(authenticate)
     if (authenticate) {
       navigate("/dashboard")
     } else{
@@ -21,16 +20,16 @@ const Layout = () => {
     <>
       <ul>
         <li>
-          <Link to="/dashboard/">Data Transfer Progress</Link>
+          <Link to="/dashboard/transfer-queue">Transfer Queue</Link>
+        </li>
+        <li>
+          <Link to="/dashboard/current-transfer-progress">Current Transfer Progress</Link>
         </li>
         <li>
           <Link to="/dashboard/health-of-data">Health of Data</Link>
         </li>
         <li>
           <Link to="/dashboard/technical-details">Technical Details</Link>
-        </li>
-        <li>
-          <Link to="/dashboard/transfer-queue">Transfer Queue</Link>
         </li>
         <li>
           <Link to="/dashboard/logout">Logout</Link>

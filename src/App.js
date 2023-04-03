@@ -19,9 +19,10 @@ function App() {
           <Route path="login" element={<Login />}/>
           <Route path="/" element={<Login />}/>
           <Route path="dashboard" element={<Layout />}>
-          <Route index element={<DataTransferProgress />} />
+          <Route path="current-transfer-progress" element={<DataTransferProgress />} />
           <Route path="health-of-data" element={<HealthOfData />} />
           <Route path="technical-details" element={<TechnicalDetails />} />
+          <Route index element={<TransferQueue />} />
           <Route path="transfer-queue" element={<TransferQueue />} />
           <Route path="logout" element={<Logout />} />
           </Route>
