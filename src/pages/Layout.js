@@ -1,26 +1,44 @@
-import { Outlet, Link} from "react-router-dom";
+import { Outlet, Link, Navigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 import './Layout.css';
 
 const Layout = () => {
+  
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    const authenticate = localStorage.getItem("authenticate");
+    if (authenticate) {
+      navigate("/dashboard")
+    } else{
+      navigate("/login")
+    }
+  }, []);
+  
   return (
     <>
       <ul>
         <li>
-          <Link to="/">Data Transfer Progress</Link>
+          <Link to="/dashboard/transfer-queue">Transfer Queue</Link>
         </li>
         <li>
-          <Link to="/health-of-data">Health of Data</Link>
+          <Link to="/dashboard/current-transfer-progress">Current Transfer Progress</Link>
         </li>
         <li>
-          <Link to="/technical-details">Technical Details</Link>
+          <Link to="/dashboard/health-of-data">Health of Data</Link>
         </li>
         <li>
-          <Link to="/transfer-queue">Transfer Queue</Link>
+          <Link to="/dashboard/technical-details">Technical Details</Link>
+        </li>
+        <li>
+          <Link to="/dashboard/logout">Logout</Link>
         </li>
       </ul>
       <Outlet />
     </>
   )
+  
 };
 
 export default Layout;
